@@ -134,7 +134,7 @@ Then it will print the result and ask for the next operation:
 
 ```
 =====================
-3.0+5.0 = 8.0
+3.0 + 5.0 = 8.0
 =====================
 Escolha uma operação!
 1 - Soma

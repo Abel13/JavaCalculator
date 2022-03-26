@@ -43,11 +43,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -84,13 +81,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how to install and setting up the app:_
+_Below is an example of how to install and setting up the app_
+
+_You should replace [user] with your own Windows username path_
 
 1. Clone the repo
    ```sh
    git clone https://github.com/Abel13/JavaCalculator.git
    ```
-   _You should replace [user] with your own Windows username path_
 2. Run
 
 ```sh
@@ -105,7 +103,7 @@ _Below is an example of how to install and setting up the app:_
 
 When you run the app, it will prompt:
 
-```console
+```
 Escolha uma operação!
 1 - Soma
 2 - Subtração
@@ -118,7 +116,7 @@ Enter the chosen option and press ENTER.
 
 It will ask for the first number:
 
-```console
+```
 Digite o primeiro número:
 ```
 
@@ -126,7 +124,7 @@ Type first number and press ENTER.
 
 It will ask for the second number:
 
-```console
+```
 Digite o segundo número:
 ```
 

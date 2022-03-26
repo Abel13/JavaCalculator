@@ -52,7 +52,7 @@
 
 This project was created in Java as an essential part of completing the Software Architecture course.
 
-<p align="right">(<a href="#top">voltar para o topo</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
@@ -66,7 +66,7 @@ This section lists the frameworks/libraries/tools used to bootstrap this project
   - [vscode-java-debug](https://github.com/Microsoft/vscode-java-debug)
   - [vscode-java-test](https://github.com/Microsoft/vscode-java-test)
 
-<p align="right">(<a href="#top">voltar para o topo</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 

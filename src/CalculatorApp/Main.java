@@ -17,7 +17,7 @@ public class Main {
     }
 
     private static String getOperator(int option) {
-        var operators = Map.of(1, "+", 2, "-", 3, "×", 4, "÷");
+        var operators = Map.of(1, " + ", 2, " - ", 3, " × ", 4, " ÷ ");
         return operators.get(option);
     }
     

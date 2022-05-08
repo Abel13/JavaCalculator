@@ -19,4 +19,8 @@ public class Calculator {
 		operation = operations.get(operationId);
 		return a + " " + operation.GetSymbol() + " " + b + " = " + operation.Execute(a, b);
 	}
+
+	public String[] GetOperationNames() {
+		return operations.stream().map(Operation::GetName).toArray(String[]::new);
+	}
 }

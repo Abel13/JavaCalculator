@@ -1,10 +1,10 @@
 package Tests;
 
-import Service.Multiply;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import Domain.Multiply;
 
 public class MultiplyTest {
   @Test

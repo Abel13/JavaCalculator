@@ -1,4 +1,4 @@
-package Service;
+package Domain;
 
 public class Power extends Operation {
   public double Execute(double a, double b) {

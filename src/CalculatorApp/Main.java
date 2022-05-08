@@ -1,5 +1,5 @@
 package CalculatorApp;
-import Service.Calculator;
+import Domain.Calculator;
 
 public class Main {
     static Calculator calculator;

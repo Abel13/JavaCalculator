@@ -1,18 +1,18 @@
-package Service;
+package Domain;
 
-public class Multiply extends Operation {
+public class Sum extends Operation {
   @Override
   public double Execute(double a, double b) {
-    return a * b;
+    return a + b;
   }
 
   @Override
   public String GetName() {
-    return "Multiplicação";
+    return "Soma";
   }
 
   @Override
   public String GetSymbol() {
-    return "×";
+    return "+";
   }
 }

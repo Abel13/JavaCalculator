@@ -1,10 +1,10 @@
 package Tests;
 
-import Service.Subtract;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import Domain.Subtract;
 
 public class SubtractTest {
   @Test

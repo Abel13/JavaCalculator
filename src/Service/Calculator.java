@@ -13,6 +13,7 @@ public class Calculator {
 		operations.add(new Subtract());
 		operations.add(new Multiply());
 		operations.add(new Divide());
+		operations.add(new Power());
 	}
 
 	public String Execute(Integer operationId, double a, double b) {

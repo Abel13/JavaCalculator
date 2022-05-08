@@ -1,17 +1,22 @@
 package Service;
 
-import java.util.Map;
+import java.util.ArrayList;
 
 public class Calculator {
-	private Map<Integer, Operation> operations;
+	private ArrayList<Operation> operations;
 	private Operation operation = null;
 
-	public Calculator(int option) {
-		operations = Map.of(1, new Sum(), 2, new Subtract(), 3, new Multiply(), 4, new Divide());
-		operation = operations.get(option);
+	public Calculator() {
+		operations = new ArrayList<Operation>();
+
+		operations.add(new Sum());
+		operations.add(new Subtract());
+		operations.add(new Multiply());
+		operations.add(new Divide());
 	}
 
-	public double Execute(double a, double b) {
-		return operation.Execute(a, b);
+	public String Execute(Integer operationId, double a, double b) {
+		operation = operations.get(operationId);
+		return a + " " + operation.GetSymbol() + " " + b + " = " + operation.Execute(a, b);
 	}
 }

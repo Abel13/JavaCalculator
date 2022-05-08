@@ -1,24 +1,17 @@
 package CalculatorApp;
-
-import java.util.Map;
-
 import Service.Calculator;
 
 public class Main {
+    static Calculator calculator;
+    static String[] operators;
+
     private static int menu() {
-        System.out.println("Escolha uma operação!");
-        System.out.println("1 - Soma");
-        System.out.println("2 - Subtração");
-        System.out.println("3 - Multiplicação");
-        System.out.println("4 - Divisão");
-        System.out.println("5 - Sair");
+        System.out.println("Escolha uma operação:");
+        for (int i = 0; i < operators.length; i++) {
+            System.out.println(i + " - " + operators[i]);
+        }
 
         return Integer.parseInt(System.console().readLine());
-    }
-
-    private static String getOperator(int option) {
-        var operators = Map.of(1, " + ", 2, " - ", 3, " × ", 4, " ÷ ");
-        return operators.get(option);
     }
     
     private static void printResult(String result) {
@@ -27,27 +20,27 @@ public class Main {
         System.out.println("=====================");
     }
 
+    private static double readValue(String message) {
+        System.out.println(message);
+        return Double.parseDouble(System.console().readLine());
+    }
+
     public static void main(String[] args) {
-        int option = 0;
+        int option = -1;
+        
+        calculator = new Calculator();
+        operators = calculator.GetOperationNames();
 
-        while(option != 5) {
+        while(readValue("Deseja efetuar algum calculo?\n0=NÃO\n1=SIM") != 0){
             option = menu();
-            
-            if (option >= 1 && option <= 4) {
-                try {
-                    Calculator calculator = new Calculator(option);
+            try {
+                double a = readValue("Digite o primeiro número: ");
+                double b = readValue("Digite o segundo número: ");
 
-                    System.out.println("Digite o primeiro número: ");
-                    double a = Double.parseDouble(System.console().readLine());
-
-                    System.out.println("Digite o segundo número: ");
-                    double b = Double.parseDouble(System.console().readLine());
-
-                    printResult(a + getOperator(option) + b + " = " + calculator.Execute(a, b));
-                } catch (Exception e) {
-                    printResult(e.getMessage());
-                }
+                printResult(calculator.Execute(option, a, b));
+            } catch (Exception e) {
+                printResult(e.getMessage());
             }
-        } ;
+        }
     }
 }

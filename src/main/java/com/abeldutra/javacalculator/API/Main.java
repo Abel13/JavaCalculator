@@ -1,7 +1,6 @@
 package main.java.com.abeldutra.javacalculator.API;
 
 import io.javalin.Javalin;
-import main.java.com.abeldutra.javacalculator.API.responses.OperatorNames;
 import main.java.com.abeldutra.javacalculator.Domain.Calculator;
 
 public class Main {
@@ -11,9 +10,7 @@ public class Main {
     app.get("/operators/names", ctx -> {
       Calculator calculator = new Calculator();
 
-      var operators = new OperatorNames();
-      operators.setOperatorNames(calculator.GetOperationNames());
-
+      var operators = calculator.GetOperationNames();
 
       ctx.json(operators);
     });

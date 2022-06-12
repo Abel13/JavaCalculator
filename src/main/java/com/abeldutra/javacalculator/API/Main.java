@@ -14,5 +14,17 @@ public class Main {
 
       ctx.json(operators);
     });
+    
+    app.get("/calculate/{option}/{value1}/{value2}", ctx -> {
+      Calculator calculator = new Calculator();
+      double value1 = Double.parseDouble(ctx.pathParam("value1"));
+      double value2 = Double.parseDouble(ctx.pathParam("value2"));
+      Integer option = Integer.parseInt(ctx.pathParam("option"));
+
+      var result = calculator.Execute(option, value1, value2);
+
+
+      ctx.json(result);
+    });
   }
 }

@@ -6,12 +6,11 @@ public class Main {
     static String[] operators;
 
     private static int menu() {
-        System.out.println("Escolha uma operação:");
         for (int i = 0; i < operators.length; i++) {
             System.out.println(i + " - " + operators[i]);
         }
 
-        return Integer.parseInt(System.console().readLine());
+        return (int)readValue("Escolha uma operação:");
     }
     
     private static void printResult(String result) {
@@ -33,9 +32,10 @@ public class Main {
 
         while(readValue("Deseja efetuar algum calculo?\n0=NÃO\n1=SIM") != 0){
             option = menu();
+
             try {
-                double a = readValue("Digite o primeiro número: ");
-                double b = readValue("Digite o segundo número: ");
+                double a = readValue("Digite o primeiro número da operação[" + operators[option] + "]: ");
+                double b = readValue("Digite o segundo número da operação[" + operators[option] + "]: ");
 
                 printResult(calculator.Execute(option, a, b));
             } catch (Exception e) {

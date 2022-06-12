@@ -1,7 +1,7 @@
 package main.java.com.abeldutra.javacalculator.API;
 
 import io.javalin.Javalin;
-import main.java.com.abeldutra.javacalculator.Domain.Calculator;
+import main.java.com.abeldutra.javacalculator.API.Domain.Calculator;
 
 public class Main {
   public static void main(String[] args) {

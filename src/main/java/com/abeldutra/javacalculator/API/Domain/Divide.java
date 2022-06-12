@@ -1,4 +1,4 @@
-package main.java.com.abeldutra.javacalculator.Domain;
+package main.java.com.abeldutra.javacalculator.API.Domain;
 
 public class Divide extends Operation {
   public double Execute(double a, double b) {

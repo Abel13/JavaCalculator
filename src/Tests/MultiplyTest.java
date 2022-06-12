@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import main.java.com.abeldutra.javacalculator.Domain.Multiply;
+import main.java.com.abeldutra.javacalculator.API.Domain.Multiply;
 
 public class MultiplyTest {
   @Test

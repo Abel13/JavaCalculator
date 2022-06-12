@@ -1,4 +1,4 @@
-package Domain;
+package main.java.com.abeldutra.javacalculator.Domain;
 
 public class Multiply extends Operation {
   @Override

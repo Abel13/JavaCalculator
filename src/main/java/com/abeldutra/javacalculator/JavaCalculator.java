@@ -1,7 +1,17 @@
-package CalculatorApp;
-import Domain.Calculator;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
 
-public class Main {
+package main.java.com.abeldutra.javacalculator;
+
+import main.java.com.abeldutra.javacalculator.Domain.Calculator;
+
+/**
+ *
+ * @author abelo
+ */
+public class JavaCalculator { 
     static Calculator calculator;
     static String[] operators;
 
@@ -12,7 +22,7 @@ public class Main {
 
         return (int)readValue("Escolha uma operação:");
     }
-    
+
     private static void printResult(String result) {
         System.out.println("=====================");
         System.out.println(result);
@@ -25,8 +35,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int option = -1;
-        
+        int option;
+
         calculator = new Calculator();
         operators = calculator.GetOperationNames();
 
@@ -42,5 +52,5 @@ public class Main {
                 printResult(e.getMessage());
             }
         }
-    }
+    }   
 }

@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Domain.Power;
+import main.java.com.abeldutra.javacalculator.Domain.Power;
 
 public class PowerTest {
   @Test

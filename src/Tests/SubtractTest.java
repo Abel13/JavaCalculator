@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Domain.Subtract;
+import main.java.com.abeldutra.javacalculator.Domain.Subtract;
 
 public class SubtractTest {
   @Test

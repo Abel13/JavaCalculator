@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Domain.Divide;
+import main.java.com.abeldutra.javacalculator.Domain.Divide;
 
 public class DivideTest {
   @Test

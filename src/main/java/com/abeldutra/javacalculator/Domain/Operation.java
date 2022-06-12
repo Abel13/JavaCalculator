@@ -1,4 +1,4 @@
-package Domain;
+package main.java.com.abeldutra.javacalculator.Domain;
 
 public abstract class Operation {
 	public abstract double Execute(double a, double b);

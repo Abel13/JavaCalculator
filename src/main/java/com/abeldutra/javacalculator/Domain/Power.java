@@ -1,4 +1,4 @@
-package Domain;
+package main.java.com.abeldutra.javacalculator.Domain;
 
 public class Power extends Operation {
   public double Execute(double a, double b) {

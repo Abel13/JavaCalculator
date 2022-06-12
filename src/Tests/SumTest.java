@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Domain.Sum;
+import main.java.com.abeldutra.javacalculator.Domain.Sum;
 
 public class SumTest {
   @Test
